@@ -1,0 +1,117 @@
+<html>
+<head>
+ <script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(61762318, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>   
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.container {
+    padding: 16px;
+    background-color: white;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+input[type=text]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 8px 0;
+    opacity: 1.0;
+    width: 20%;
+}
+
+
+</style>
+</head>
+<body>
+
+<form method="post" id="buttonform" action="script.php">
+	<input type="submit" name="buttongame" id="buttongame" value="Показать список игр" class="button">
+	<input type="submit" name="buttonprog" id="buttonprog" value="Показать список программ" class="button">
+	<input type="submit" name="buttonprice" id="buttonprice" value="Показать список цен" class="button">
+	<input type="submit" name="buttonsubs" id="buttonsubs" value="Показать список подписок" class="button">
+	<input type="submit" name="buttonbusycomp" id="buttonbusycomp" value="Показать список занятых компьютеров" class="button">
+	<input type="submit" name="buttonnotbusycomp" id="buttonnotbusycomp" value="Показать список свободных компьютеров" class="button">
+</form>
+<form method="post" id="computerscontrolform" action="script.php">
+    <div class="container">
+        <h1>Управление компьютерами</h1>
+        <hr>
+        <select name="computers" id="computers" required>
+            <option disabled selected="selected">Выберите номер компьютера</option>
+	        <option id="1" name="1">1</option>
+	        <option id="2" name="2">2</option>
+	        <option id="3" name="3">3</option>
+	        <option id="4" name="4">4</option>
+	        <option id="5" name="5">5</option>
+	        <option id="6" name="6">6</option>
+        </select>
+        <p><input type="submit" name="buttonreleasecomputer" id="buttonreleasecomputer" value="Освободить компьютер" class="button"></p>
+        <p><input type="submit" name="buttonoccupycomputer" id="buttonoccupycomputer" value="Занять компьютер" class="button"></p>
+        <hr>
+    </div>
+</form>
+<br><br><br><br><br><br><br>
+<form method="post" id="registerform" onsubmit="ym(61762318,'reachGoal','target'); return true;" action="script.php">
+    <div class="container">
+    <h1>Оформление подписки</h1>
+    <hr>
+
+    <input type="text" placeholder="Фамилия" name="surname" id="surname" required>
+    <input type="text" placeholder="Имя" name="name" id="name" required>
+    <p><input type="email" placeholder="Email" name="email" id="email" required></p>
+    
+    <select name="subscription" required>
+	<option disabled selected="selected">Выберите номер подписки</option>
+	<option id="1" name="1">1</option>
+	<option id="2" name="2">2</option>
+    </select>
+    <hr>
+
+    <input type="submit" name="buttonreg" id="buttonreg" onclick="ym(61762318,'reachGoal','target'); return true;" value="Оформить подписку" class="registerbtn">
+    </div>
+ 
+</form>
+</body>
+</html>
