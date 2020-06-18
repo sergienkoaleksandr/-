@@ -9,3 +9,4 @@
 Администратор сможет делать то же самое, что и клиент, но ещё и управлять занятостью компьютеров - помечать их занятыми и свободными.
 8) https://computer-club1.000webhostapp.com/
 9) https://computer-club1.000webhostapp.com/admin/index.html
+10) Запись выступления: https://www.youtube.com/watch?v=1meVATHyXSk&t=68s
